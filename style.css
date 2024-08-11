@@ -29,8 +29,8 @@ header h1 {
 
 .profile-photo {
     border-radius: 50%;
-    width: 300px;
-    height: 300px;
+    width: 650px;
+    height: 650px;
     object-fit: cover;
     position: absolute;
     right: 20px;
