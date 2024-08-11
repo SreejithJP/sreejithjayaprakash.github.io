@@ -1,56 +1,87 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
     background: #333;
-    color: #fff;
-    padding: 10px 0;
+    color: white;
+    padding: 15px 0;
+}
+
+header nav ul {
+    list-style: none;
     text-align: center;
-}
-
-header h1 {
+    padding: 0;
     margin: 0;
-    font-size: 2.5rem;
 }
 
-header p {
-    margin: 0;
-    font-size: 1rem;
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-main {
-    padding: 20px;
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-section {
+.section-about {
+    text-align: center;
+    padding: 50px 0;
+    background: #eee;
+}
+
+.section-about .profile-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
     margin-bottom: 20px;
 }
 
-section h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
+.section-projects {
+    padding: 50px;
+    background: white;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+.section-projects .project-categories {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
 }
 
-ul li {
-    margin-bottom: 10px;
+.section-projects .category {
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.project-details {
+    display: none;
+    margin-top: 20px;
+}
+
+.project-details.active {
+    display: block;
+}
+
+.section-education,
+.section-certifications,
+.section-contact {
+    padding: 50px;
+    background: #eee;
 }
 
 footer {
     text-align: center;
-    padding: 10px 0;
+    padding: 20px;
     background: #333;
-    color: #fff;
-    margin-top: 20px;
+    color: white;
 }
