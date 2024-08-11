@@ -3,85 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sreejith Jayaprakash - Portfolio</title>
+    <title>Sreejith Jayaprakash | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Sreejith Jayaprakash</h1>
+        <img src="C:\Users\sreej\sreejithjayaprakash.github.io\images\photo2.jpg" alt="Sreejith Jayaprakash" class="profile-photo">
     </header>
 
-    <section id="about" class="section-about">
-        <img src="images/yourphoto.jpg" alt="Your Photo" class="profile-photo">
-        <h1>Sreejith Jayaprakash</h1>
-        <p>A dedicated and aspiring data analyst with a passion for leveraging data to drive actionable insights. I am eager to contribute to an organization that supports technical growth and personal development while solving real-world challenges through innovative solutions.</p>
+    <nav class="dashboard">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#internships">Internships</a>
+        <a href="#education">Education</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <div class="section-container">
+            <div class="section-description">
+                <h2>About Me</h2>
+                <p>I’m Sreejith Jayaprakash, a dedicated data analyst from Thrissur, Kerala, with a Master’s degree in Computer Applications from Rajiv Gandhi Institute of Technology. Passionate about leveraging data to uncover insights, I specialize in machine learning and predictive modeling. My experience spans various data-driven projects, including developing an animal image classification model and creating interactive data visualizations. I’m eager to apply my skills in data analysis, machine learning, and visualization to solve real-world challenges and drive innovative solutions in a dynamic organization.</p>
+            </div>
+            <div class="project-image">
+                
+            </div>
+        </div>
     </section>
 
-    <section id="projects" class="section-projects">
+    <section id="projects">
         <h2>Projects</h2>
-        <div class="project-categories">
-            <div class="category" onclick="showCategory('ml-projects')">ML Projects</div>
-            <div class="category" onclick="showCategory('powerbi-projects')">Power BI Projects</div>
-            <div class="category" onclick="showCategory('bigdata-projects')">Big Data Projects</div>
+        <div class="project-dashboard">
+            <a href="#powerbi">Power BI Projects</a>
+            <a href="#ml">Machine Learning Projects</a>
+            <a href="#nlp">NLP Projects</a>
         </div>
-        <div id="ml-projects" class="project-details">
-            <h3>ML Projects</h3>
-            <div class="project">
-                <h4>Animal Classification Model</h4>
-                <p>Developed an animal image classification model using VGG16 with transfer learning techniques. Fine-tuned the model to classify images into 15 distinct animal categories. Integrated the trained model into a Flask web application, providing real-time image classification capabilities through a user-friendly web interface.</p>
+
+        <div id="powerbi" class="project-container">
+            <div class="project-description">
+                <h3>Power BI Movie Sales Dashboard</h3>
+                <p><strong>January 2024</strong></p>
+                <p>Created a comprehensive dashboard visualizing movie sales data from IMDb.</p>
+                <p>Included interactive charts and slicers for detailed analysis.</p>
             </div>
-            <!-- Add more ML Projects here -->
-        </div>
-        <div id="powerbi-projects" class="project-details">
-            <h3>Power BI Projects</h3>
-            <div class="project">
-                <h4>Power BI Movie Sales Dashboard</h4>
-                <p>Created a comprehensive dashboard visualizing movie sales data from IMDb. Included interactive charts and slicers for detailed analysis.</p>
+            <div class="project-image">
+                
             </div>
-            <!-- Add more Power BI Projects here -->
         </div>
-        <div id="bigdata-projects" class="project-details">
-            <h3>Big Data Projects</h3>
-            <!-- Add Big Data Projects here -->
+
+        <div id="ml" class="project-container">
+            <div class="project-description">
+                <h3>Animal Classification Model</h3>
+                <p><strong>February 2024 - April 2024</strong></p>
+                <p>Developed an animal image classification model using VGG16 with transfer learning techniques. Fine-tuned the model to classify images into 15 distinct animal categories. Implemented a comprehensive data augmentation strategy to enhance model performance. Integrated the trained model into a Flask web application, providing real-time image classification capabilities through a user-friendly web interface.</p>
+            </div>
+            <div class="project-image">
+                
+            </div>
+        </div>
+
+        <div id="nlp" class="project-container">
+            <div class="project-description">
+                <h3>Image Caption Generator</h3>
+                <p><strong>August 2024 - Ongoing</strong></p>
+                <p>Developing a deep learning model that generates descriptive captions for images using a combination of CNNs and RNNs with LSTM units. The project aims to automate the process of image captioning, providing accurate and context-aware descriptions for a variety of images.</p>
+            </div>
+            <div class="project-image">
+                
+            </div>
         </div>
     </section>
 
-    <section id="education" class="section-education">
-        <h2>Education</h2>
-        <ul>
-            <li><strong>Master of Computer Applications (MCA)</strong>, Rajiv Gandhi Institute of Technology, Kottayam (2022-2024) - KTU University</li>
-            <li><strong>Bachelor of Science in Mathematics</strong>, Sree Kerala Varma College, Thrissur (2018-2021) - Calicut University</li>
-        </ul>
+    <section id="internships">
+        <div class="section-container">
+            <div class="section-description">
+                <h2>Internships</h2>
+                <p>Data Analysis</p>
+                <p>IIT Madras, Chennai, Tamil Nadu</p>
+                <p>Feb 2024–May 2024</p>
+                <p>This project investigates the biases in cloud detection between sun-synchronous (SSO) and geosynchronous (GEO) satellites, focusing on how factors like viewing angles, orbit characteristics, and sensor features impact data accuracy. The study aims to identify and quantify these biases, particularly their effect on critical applications such as environmental monitoring and weather forecasting. Following this analysis, the project will develop machine learning models that integrate satellite-derived and ground-based data to forecast rainfall in the Kerala region. By improving the precision of rainfall predictions, the research seeks to enhance weather forecasting and resource management, contributing to better climate resilience and informed decision-making in Kerala.</p>
+            </div>
+            <div class="project-image">
+                
+            </div>
+        </div>
     </section>
 
-    <section id="certifications" class="section-certifications">
-        <h2>Certifications</h2>
-        <ul>
-            <li>Database Management System, NPTEL (Jul 2023 - Sep 2023)</li>
-            <li>Introduction to Internet of Things, NPTEL (Jul 2023 - Oct 2023)</li>
-        </ul>
+    <section id="education">
+        <div class="section-container">
+            <div class="section-description">
+                <h2>Education</h2>
+                <h3>Masters</h3>
+                <p>Master of Computer Applications (MCA)</p>
+                <p>Rajiv Gandhi Institute of Technology </p>
+                <p>Kottayam </p>
+                <p>2022-2024</p>
+                <h3>Bachelors</h3>
+                <p>Bachelor of Science in Mathematics</p>
+                <p>Sree Kerala Varma College</p>
+                <p>Thrissur</p>
+                <p>2018-2021</p>
+            </div>
+            <div class="section-image">
+                <img src="C:\Users\sreej\sreejithjayaprakash.github.io\images\book.png" alt="Education">
+            </div>
+        </div>
     </section>
 
-    <section id="contact" class="section-contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:sreejithjayaprakash194@gmail.com">sreejithjayaprakash194@gmail.com</a></p>
-        <p>Phone: +91 9995708612</p>
-        <p>Location: Thrissur, Kerala, India</p>
-        <p><a href="https://github.com/sreejithjayaprakash" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/sreejithjayaprakash" target="_blank">LinkedIn</a></p>
+    <section id="certifications">
+        <div class="section-container">
+            <div class="section-description">
+                <h2>Certifications</h2>
+                <p>Database Management System</p>
+                <p>NPTEL</p>
+                <p>Jul 2023– Sep 2023</p>
+                <p>Introduction to Internet of Things</p>
+                <p>NPTEL</p>
+                <p>Jul 2023– Oct 2023</p>
+            </div>
+        </div>
     </section>
+
+    <section id="contact">
+        <div class="section-container">
+            <div class="section-description">
+                <h2>Contact</h2>
+                <p>Email: <a href="mailto:sreejithjayaprakash194@gmail.com">sreejithjayaprakash194@gmail.com</a></p>
+                <p>Phone: +91 9995708612</p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/sreejith-jayaprakash" target="_blank">linkedin.com/in/sreejith-jayaprakash</a></p>
+                <p>GitHub: <a href="https://github.com/sreejithjayaprakash" target="_blank">github.com/sreejithjayaprakash</a></p>
+                <p>Location: Thrissur, Kerala, India</p>
+                </div>
+        </div>
+    </section>
+    
 
     <footer>
-        <p>© 2024 Sreejith Jayaprakash</p>
+        <p>&copy; 2024 Sreejith Jayaprakash</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
