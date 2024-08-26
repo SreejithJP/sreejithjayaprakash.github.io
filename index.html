@@ -1,148 +1,757 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sreejith Jayaprakash | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio - Sreejith Jayaprakash</title>
+
+  <!--
+    - favicon
+    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  -->
+  
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <h1>Sreejith Jayaprakash</h1>
-        <img src="images\photo2.jpg" alt="Sreejith Jayaprakash" class="profile-photo">
-    </header>
 
-    <nav class="dashboard">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#internships">Internships</a>
-        <a href="#education">Education</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#contact">Contact</a>
-    </nav>
+  <!--
+    - #MAIN
+  -->
 
-    <section id="about">
-        <div class="section-container">
-            <div class="section-description">
-                <h2>About Me</h2>
-                <p>I’m Sreejith Jayaprakash, a dedicated data analyst from Thrissur, Kerala, with a Master’s degree in Computer Applications from Rajiv Gandhi Institute of Technology. Passionate about leveraging data to uncover insights, I specialize in machine learning and predictive modeling. My experience spans various data-driven projects, including developing an animal image classification model and creating interactive data visualizations. I’m eager to apply my skills in data analysis, machine learning, and visualization to solve real-world challenges and drive innovative solutions in a dynamic organization.</p>
-            </div>
-            <div class="project-image">
-                
-            </div>
-        </div>
-    </section>
+  <main>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-dashboard">
-            <a href="#powerbi">Power BI Projects</a>
-            <a href="#ml">Machine Learning Projects</a>
-            <a href="#nlp">NLP Projects</a>
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img id ="img1" src="./assets/images/my_image.png" alt="Sreejith Jayaprakash" width="90">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Sreejith Jayaprakash">Sreejith Jayaprakash</h1>
+
+          <p class="title">Data Analyst</p>
         </div>
 
-        <div id="powerbi" class="project-container">
-            <div class="project-description">
-                <h3>Power BI Movie Sales Dashboard</h3>
-                <p><strong>January 2024</strong></p>
-                <p>Created a comprehensive dashboard visualizing movie sales data from IMDb.</p>
-                <p>Included interactive charts and slicers for detailed analysis.</p>
-            </div>
-            <div class="project-image">
-                
-            </div>
-        </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
 
-        <div id="ml" class="project-container">
-            <div class="project-description">
-                <h3>Animal Classification Model</h3>
-                <p><strong>February 2024 - April 2024</strong></p>
-                <p>Developed an animal image classification model using VGG16 with transfer learning techniques. Fine-tuned the model to classify images into 15 distinct animal categories. Implemented a comprehensive data augmentation strategy to enhance model performance. Integrated the trained model into a Flask web application, providing real-time image classification capabilities through a user-friendly web interface.</p>
-            </div>
-            <div class="project-image">
-                
-            </div>
-        </div>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
 
-        <div id="nlp" class="project-container">
-            <div class="project-description">
-                <h3>Image Caption Generator</h3>
-                <p><strong>August 2024 - Ongoing</strong></p>
-                <p>Developing a deep learning model that generates descriptive captions for images using a combination of CNNs and RNNs with LSTM units. The project aims to automate the process of image captioning, providing accurate and context-aware descriptions for a variety of images.</p>
-            </div>
-            <div class="project-image">
-                
-            </div>
-        </div>
-    </section>
+      </div>
 
-    <section id="internships">
-        <div class="section-container">
-            <div class="section-description">
-                <h2>Internships</h2>
-                <p>Data Analysis</p>
-                <p>IIT Madras, Chennai, Tamil Nadu</p>
-                <p>Feb 2024–May 2024</p>
-                <p>This project investigates the biases in cloud detection between sun-synchronous (SSO) and geosynchronous (GEO) satellites, focusing on how factors like viewing angles, orbit characteristics, and sensor features impact data accuracy. The study aims to identify and quantify these biases, particularly their effect on critical applications such as environmental monitoring and weather forecasting. Following this analysis, the project will develop machine learning models that integrate satellite-derived and ground-based data to forecast rainfall in the Kerala region. By improving the precision of rainfall predictions, the research seeks to enhance weather forecasting and resource management, contributing to better climate resilience and informed decision-making in Kerala.</p>
-            </div>
-            <div class="project-image">
-                
-            </div>
-        </div>
-    </section>
+      <div class="sidebar-info_more">
 
-    <section id="education">
-        <div class="section-container">
-            <div class="section-description">
-                <h2>Education</h2>
-                <h3>Masters</h3>
-                <p>Master of Computer Applications (MCA)</p>
-                <p>Rajiv Gandhi Institute of Technology </p>
-                <p>Kottayam </p>
-                <p>2022-2024</p>
-                <h3>Bachelors</h3>
-                <p>Bachelor of Science in Mathematics</p>
-                <p>Sree Kerala Varma College</p>
-                <p>Thrissur</p>
-                <p>2018-2021</p>
-            </div>
-            <div class="section-image">
-                <img src="images\book.png" alt="Education">
-            </div>
-        </div>
-    </section>
+        <div class="separator"></div>
 
-    <section id="certifications">
-        <div class="section-container">
-            <div class="section-description">
-                <h2>Certifications</h2>
-                <h3>Database Management System</h3>
-                <p>NPTEL</p>
-                <p>Jul 2023– Sep 2023</p>
-                <h3>Introduction to Internet of Things</h3>
-                <p>NPTEL</p>
-                <p>Jul 2023– Oct 2023</p>
-            </div>
-        </div>
-    </section>
+        <ul class="contacts-list">
 
-    <section id="contact">
-        <div class="section-container">
-            <div class="section-description">
-                <h2>Contact</h2>
-                <p>Email: <a href="mailto:sreejithjayaprakash194@gmail.com">sreejithjayaprakash194@gmail.com</a></p>
-                <p>Phone: +91 9995708612</p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/sreejith-jayaprakash" target="_blank">linkedin.com/in/sreejith-jayaprakash</a></p>
-                <p>GitHub: <a href="https://github.com/sreejithjayaprakash" target="_blank">github.com/sreejithjayaprakash</a></p>
-                <p>Location: Thrissur, Kerala, India</p>
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:sreejithjayaprakash194@gmail.com" class="contact-link">sreejithjayaprakash194@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+919995798612" class="contact-link">+91 9995708612</a>
+            </div>
+
+          </li>
+
+          
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Thrissur, Kerala, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Skills</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title" style="margin-top: 20%;">Hei..</h2>
+        </header>
+
+        <section class="about-text">
+          <p><div style="font-size:2em;display: inline;">I</div> 'm Sreejith Jayaprakash, a passionate data analyst from Thrissur, Kerala.
+             With a Master’s degree in Computer Applications from Rajiv Gandhi Institute of Technology, I have a strong foundation in data analysis, machine learning, and visualization.
+              I'm driven by the desire to uncover insights from data and apply them to solve real-world challenges.
+               My goal is to bring my analytical skills and innovative mindset to a dynamic organization where I can contribute to meaningful solutions and drive impactful results.</p>
+
+            
+
+        </section>
+        
+
+        <!--
+          - testimonials
+        
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Rohit Patil</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
                 </div>
-        </div>
-    </section>
-    
 
-    <footer>
-        <p>&copy; 2024 Sreejith Jayaprakash</p>
-    </footer>
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Dipti Sinha</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        
+          - testimonials modal
+         -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+      
+
+        <!--
+          - clients
+        -->
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title"> Master of Computer Application
+              </h4>
+
+              <span>2022 — 2024</span>
+
+              <p class="timeline-text">
+                Rajiv Gandhi Institute of Technology <br>
+                Kottayam, Kerala 
+               
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Bachelor of Science in Mathematics
+                </h4>
+
+              <span>2018 — 2022</span>
+
+              <p class="timeline-text">
+                Sree Kerala Varma College<br>
+                Thrissur, Kerala
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Higher Secondary</h4>
+
+              <span>2016 — 2018</span>
+
+              <p class="timeline-text">
+                Vivekodayam Boys Higher Secondary School<br>
+                Thrissur, Kerala
+              </p>
+              
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Higher Secondary</h4>
+
+              <span>2017-2018</span>
+
+              <p class="timeline-text">
+                CMS High School<br>
+                Thrissur, Kerala
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Internships/Training</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title"> Data Analyst Intern </h4>
+
+              <span>Feb/2024 - May/2024</span>
+
+              <p class="timeline-text">
+                The internship involved evaluating biases in cloud detection by geosynchronous and sun-synchronous satellites and developing predictive models to forecast rainfall in the Kerala region.
+                <br>This work was conducted under Dr Saleem Ali C K, a postdoctoral researcher in the Department of Civil Engineering at IIT Madras.
+              </p>
+
+            </li>
+          </ol>
+          </section>
+
+            <section class="skill">
+
+              <h3 class="h3 skills-title">Languages</h3>
+    
+              <ul class="skills-list content-card">
+    
+                <li class="skills-item">
+    
+                  <div class="title-wrapper">
+                    <h5 class="h5">Malayalam</h5>
+                    <data value="80">100%</data>
+                  </div>
+    
+                  <div class="skill-progress-bg">
+                    <div class="skill-progress-fill" style="width: 100%;"></div>
+                  </div>
+    
+                </li>
+    
+                <li class="skills-item">
+    
+                  <div class="title-wrapper">
+                    <h5 class="h5">English</h5>
+                    <data value="70">70%</data>
+                  </div>
+    
+                  <div class="skill-progress-bg">
+                    <div class="skill-progress-fill" style="width: 76%;"></div>
+                  </div>
+    
+                </li>
+    
+                <li class="skills-item">
+    
+                  <div class="title-wrapper">
+                    <h5 class="h5">Hindi</h5>
+                    <data value="90">50%</data>
+                  </div>
+    
+                  <div class="skill-progress-bg">
+                    <div class="skill-progress-fill" style="width: 50%;"></div>
+                  </div>
+    
+                </li>
+    
+              </ul>
+    
+            
+              
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Power BI</button>
+            </li>
+
+
+            <li class="filter-item">
+              <button data-filter-btn>ML</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Power BI</button>
+              </li>
+
+
+              <li class="select-item">
+                <button data-select-item>ML</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+
+            <li class="project-item  active" data-filter-item data-category="ml">
+              <a href="https://github.com/SreejithJP/ANIMAL_CLASS_PREDICTION">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/before upload.jpg" alt="Animal Classification" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Animal Classification</h3>
+
+                <p class="project-category">ML Projects</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="power bi">
+              <a href="https://github.com/SreejithJP/Movie_Sales_Visualization">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/imdb.jpg" alt="Movie Review" loading="lazy" >
+                </figure>
+
+                <h3 class="project-title">Movie Sales Dashboard</h3>
+
+                <p class="project-category">Power BI Projects</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #SKILLS STACK  *****************************************************************************
+      -->
+
+      <article class="blog" data-page="skills">
+
+        <header>
+          <h2 class="h2 article-title">Skills Stack</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <img src="assets/images/icon-dev.svg" alt="Development Icon" width="40" height="40">
+
+          <!--    <ion-icon name="book-outline"></ion-icon> -->
+            </div>
+
+           <!-- <h3 class="h3">Education</h3> -->
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title"> Data Analytics
+              </h4>
+              <span>Data Science</span>
+              <span>Data Analysis</span>
+              <span>Microsoft Excel</span>
+              <span>SQL</span>
+              <span>MySQL</span>
+              <span>Visualization</span>
+              <span>Power BI</span>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Machine Learning & Deep Learning
+                </h4>
+
+              <span>Machine Learning</span>
+              <span>TensorFlow</span>
+              <span>Keras</span>
+              <span>Scikit-Learn</span>
+              <span>Statistics</span>
+              <span>Algebra</span>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Web Development</h4>
+
+              <span>HTML</span>
+              <span>CSS</span>
+
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Big Data Technologies</h4>
+
+              <span>Apache Spark</span>
+                <span>Pig</span>
+                <span>Hadoop</span>
+
+            </li>
+
+          </ol>
+
+        </section>
+        
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        
+
+        <section class="contact-form">
+
+          
+
+
+            <div class="input-wrapper">
+
+
+              <div id="con1">
+                <br>
+              <a href="mailto:sreejithjayaprakash194@gmail.com" >
+              <button id="b1" name="Gmail" class="form-input" >Gmail</button></a>
+
+              <a href="https://github.com/sreejithjayaprakash" >
+                <button id="b2" name="Github" class="form-input" >Github</button></a>
+
+                <a href="https://www.linkedin.com/in/sreejithjayaprakash/" >
+                  <button id="b3" name="Gmail" class="form-input" >Linkedin</button></a>
+                </div>
+
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
